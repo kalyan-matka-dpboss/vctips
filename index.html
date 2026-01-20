@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virat Cricket Tips | Premium Expert</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0f1d;
+            color: #f1f5f9;
+            overflow: hidden;
+            height: 100dvh;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 1s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .scale-in {
+            opacity: 0;
+            transform: scale(0.95);
+            transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .scale-in.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .bg-glow-1 {
+            background: radial-gradient(circle, rgba(37, 99, 235, 0.15) 0%, rgba(10, 15, 29, 0) 70%);
+        }
+
+        .bg-glow-2 {
+            background: radial-gradient(circle, rgba(234, 179, 8, 0.05) 0%, rgba(10, 15, 29, 0) 70%);
+        }
+
+        .profile-ring {
+            position: relative;
+        }
+        .profile-ring::after {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border-radius: 9999px;
+            background: linear-gradient(to bottom right, #fbbf24, #f59e0b);
+            z-index: -1;
+            opacity: 0.5;
+            filter: blur(8px);
+        }
+    </style>
+</head>
+<body class="flex flex-col relative">
+    <!-- Visual Depth Background -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute -top-[10%] -left-[10%] w-[60%] h-[60%] bg-glow-1 blur-[120px] rounded-full"></div>
+        <div class="absolute -bottom-[10%] -right-[10%] w-[60%] h-[60%] bg-glow-2 blur-[120px] rounded-full"></div>
+    </div>
+
+    <!-- Header - Fixed Top -->
+    <nav class="shrink-0 px-6 py-4 flex items-center justify-between z-20 bg-[#0a0f1d]/20 backdrop-blur-sm border-b border-white/5">
+        <div class="flex items-center gap-3">
+            <div class="w-9 h-9 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-lg flex items-center justify-center shadow-lg shadow-yellow-500/20">
+                <i data-lucide="trophy" class="text-black w-5 h-5"></i>
+            </div>
+            <span class="text-lg font-black tracking-tight uppercase italic leading-none">
+                Virat<span class="text-yellow-500">Tips</span>
+            </span>
+        </div>
+        <div class="flex items-center gap-2 px-3 py-1.5 bg-emerald-500/10 rounded-full border border-emerald-500/20">
+            <div class="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse"></div>
+            <span class="text-[10px] font-black text-emerald-400 uppercase tracking-widest">Market Live</span>
+        </div>
+    </nav>
+
+    <!-- Main Content Area - Center Focused -->
+    <main class="flex-1 flex flex-col justify-center items-center px-6 text-center relative z-10 max-w-xl mx-auto w-full">
+        
+        <!-- Hero Section -->
+        <div id="hero-content" class="fade-in mb-8 flex flex-col items-center">
+            <!-- Profile Picture (DP) -->
+            <div class="profile-ring mb-6 transition-transform hover:scale-105 duration-500">
+                <div class="w-24 h-24 md:w-28 md:h-28 rounded-full border-4 border-yellow-500 p-1 bg-[#0a0f1d]">
+                    <img src="image_bd7ad9.jpg" alt="Virat Expert" class="w-full h-full rounded-full object-cover">
+                </div>
+                <div class="absolute -bottom-1 -right-1 bg-emerald-500 border-2 border-[#0a0f1d] w-6 h-6 rounded-full flex items-center justify-center">
+                    <i data-lucide="check" class="text-white w-3 h-3 stroke-[4]"></i>
+                </div>
+            </div>
+
+            <div class="inline-flex items-center gap-2 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full text-[10px] font-bold text-yellow-500 mb-4 uppercase tracking-[0.2em]">
+                <i data-lucide="star" class="w-3.5 h-3.5 fill-yellow-500"></i> India's Premium Expert
+            </div>
+            
+            <h1 class="text-4xl md:text-5xl font-black mb-3 leading-none tracking-tight italic uppercase">
+                VIRAT <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-200">CRICKET</span> TIPS
+            </h1>
+            <p class="text-sm text-slate-400 max-w-sm mx-auto leading-relaxed">
+                Get 95% accurate session reports and match winner updates daily from the most trusted source.
+            </p>
+        </div>
+
+        <!-- CENTERED CTA BUTTON -->
+        <div id="cta-button" class="scale-in w-full max-w-xs mb-8">
+            <!-- Updated Link Here -->
+            <a href="https://viratcricket-tips.github.io/virat/" 
+               class="group relative w-full h-20 bg-[#24A1DE] hover:bg-[#2090c7] rounded-3xl font-black text-xl flex flex-col items-center justify-center gap-0.5 transition-all hover:scale-[1.05] active:scale-95 shadow-[0_20px_50px_rgba(36,161,222,0.3)] overflow-hidden border-2 border-white/10">
+                <div class="absolute inset-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+                
+                <div class="flex items-center gap-3">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" class="w-7 h-7" alt="Telegram">
+                    <span>JOIN NOW</span>
+                    <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+                </div>
+                <span class="text-[10px] font-bold opacity-80 tracking-widest uppercase">Totally Free Channel</span>
+            </a>
+            <div class="mt-4 flex items-center justify-center gap-2 text-slate-500">
+                <i data-lucide="users" class="w-3.5 h-3.5"></i>
+                <span class="text-[11px] font-bold uppercase tracking-widest">54K+ Active Members</span>
+            </div>
+        </div>
+
+        <!-- Bottom Status Card -->
+        <div id="status-card" class="fade-in w-full bg-white/[0.03] border border-white/10 rounded-2xl p-4">
+            <div class="flex items-center justify-between bg-black/40 rounded-xl p-3 border border-white/5">
+                <div class="flex items-center gap-3">
+                    <div class="p-2 bg-emerald-500/10 rounded-lg">
+                        <i data-lucide="activity" class="w-4 h-4 text-emerald-500"></i>
+                    </div>
+                    <div class="text-left">
+                        <p class="text-[10px] text-slate-500 font-bold uppercase">Recent Pass</p>
+                        <p id="match-name" class="text-xs font-bold text-white tracking-wide transition-opacity duration-300">IND vs AUS</p>
+                    </div>
+                </div>
+                <div class="text-right">
+                    <span id="match-result" class="text-[10px] font-black text-emerald-400 bg-emerald-500/10 px-2 py-1 rounded-md border border-emerald-500/20 transition-opacity duration-300">
+                        95% Accuracy
+                    </span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Indicators - Fixed Bottom -->
+    <footer class="shrink-0 pb-10 px-6 z-10 flex flex-col items-center gap-4">
+        <div class="flex items-center gap-8 opacity-40">
+           <div class="flex items-center gap-1.5">
+            <i data-lucide="shield-check" class="w-4 h-4 text-emerald-500"></i>
+            <span class="text-[9px] font-bold uppercase tracking-widest text-slate-300">Verified History</span>
+           </div>
+           <div class="flex items-center gap-1.5">
+            <i data-lucide="shield-check" class="w-4 h-4 text-emerald-500"></i>
+            <span class="text-[9px] font-bold uppercase tracking-widest text-slate-300">IPL Expert</span>
+           </div>
+        </div>
+        <p class="text-[8px] text-slate-600 font-bold uppercase tracking-tighter opacity-50">
+            Be Responsible • 18+ • Non-Gambling Analysis Only • Strictly for Tips
+        </p>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Reveal animations on load
+        window.onload = () => {
+            setTimeout(() => document.getElementById('hero-content').classList.add('visible'), 100);
+            setTimeout(() => document.getElementById('cta-button').classList.add('visible'), 300);
+            setTimeout(() => document.getElementById('status-card').classList.add('visible'), 500);
+        };
+
+        // Live Ticker Logic
+        const matches = [
+            { match: 'MI vs CSK', result: 'JACKPOT WIN' },
+            { match: 'IND vs PAK', result: 'MATCH PASS' },
+            { match: 'RCB vs KKR', result: 'SESSION PASS' },
+            { match: 'ENG vs NZ', result: 'FIXED WIN' }
+        ];
+        
+        let currentIndex = 0;
+        const matchNameEl = document.getElementById('match-name');
+        const matchResultEl = document.getElementById('match-result');
+
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % matches.length;
+            
+            // Subtle fade transition for text
+            matchNameEl.style.opacity = '0';
+            matchResultEl.style.opacity = '0';
+            
+            setTimeout(() => {
+                matchNameEl.textContent = matches[currentIndex].match;
+                matchResultEl.textContent = matches[currentIndex].result;
+                matchNameEl.style.opacity = '1';
+                matchResultEl.style.opacity = '1';
+            }, 300);
+        }, 3000);
+    </script>
+</body>
+</html>
