@@ -92,8 +92,13 @@
         <div id="hero-content" class="fade-in mb-8 flex flex-col items-center">
             <!-- Profile Picture (DP) -->
             <div class="profile-ring mb-6 transition-transform hover:scale-105 duration-500">
-                <div class="w-24 h-24 md:w-28 md:h-28 rounded-full border-4 border-yellow-500 p-1 bg-[#0a0f1d]">
-                    <img src="image_bd7ad9.jpg" alt="Virat Expert" class="w-full h-full rounded-full object-cover">
+                <div class="w-24 h-24 md:w-28 md:h-28 rounded-full border-4 border-yellow-500 p-1 bg-[#0a0f1d] overflow-hidden">
+                    <img 
+                        src="https://share.google/images/H9PZ0oa3hrs7SktLk" 
+                        alt="Virat Expert" 
+                        class="w-full h-full rounded-full object-cover"
+                        onerror="this.src='https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?w=400&h=400&fit=crop'"
+                    >
                 </div>
                 <div class="absolute -bottom-1 -right-1 bg-emerald-500 border-2 border-[#0a0f1d] w-6 h-6 rounded-full flex items-center justify-center">
                     <i data-lucide="check" class="text-white w-3 h-3 stroke-[4]"></i>
@@ -114,7 +119,6 @@
 
         <!-- CENTERED CTA BUTTON -->
         <div id="cta-button" class="scale-in w-full max-w-xs mb-8">
-            <!-- Updated Link Here -->
             <a href="https://viratcricket-tips.github.io/virat/" 
                class="group relative w-full h-20 bg-[#24A1DE] hover:bg-[#2090c7] rounded-3xl font-black text-xl flex flex-col items-center justify-center gap-0.5 transition-all hover:scale-[1.05] active:scale-95 shadow-[0_20px_50px_rgba(36,161,222,0.3)] overflow-hidden border-2 border-white/10">
                 <div class="absolute inset-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
@@ -175,11 +179,11 @@
         lucide.createIcons();
 
         // Reveal animations on load
-        window.onload = () => {
+        window.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => document.getElementById('hero-content').classList.add('visible'), 100);
             setTimeout(() => document.getElementById('cta-button').classList.add('visible'), 300);
             setTimeout(() => document.getElementById('status-card').classList.add('visible'), 500);
-        };
+        });
 
         // Live Ticker Logic
         const matches = [
